@@ -8,9 +8,21 @@
   padding: 0;
 }
 
+.sec{
+	background: #956243;
+	position: relative;
+	padding: 100px;
+	color: #E6D3C8
+}
+.sec h2{
+	font-size: 3.5em;
+	margin-bottom: 10px;
+	color: #fff;
+	
+}
 header {
 	
-position: absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -45,10 +57,9 @@ header ul li a{
 	padding: 6px 15px;
 	color: #FFF;
 	border-radius: 20px;
-	transition-delay: 0.3s;
 }
 
-header ul li a:hover, header ul li a.active{
+ul li a:hover, ul li a:active{
 	background: #fff;
 	color:#956243;
 }
@@ -61,6 +72,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section::before{
+	content: '';	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height :100px;
+	background: linear-gradient(to top,#956243,transparent);
 }
 section img {
   position: absolute;
@@ -87,4 +106,10 @@ section img {
 	background: #fff;
 	color: rgba(149,98,67,1.00);
 	font-size: 1.5em;
+	transform: translateY(200px)
+}
+
+#btn:hover {
+	background: rgba(149,98,67,1.00);
+	color: #FFFFFF;
 }
