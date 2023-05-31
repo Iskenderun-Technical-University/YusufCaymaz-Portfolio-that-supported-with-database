@@ -1,0 +1,54 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+* {
+  font-size: 18px;
+  font-family: Poppins;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #956243;
+}
+
+header {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .FirstHeader{
+	color: aliceblue;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.4em;
+	letter-spacing: 0.7px;
+}
+
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+header ul li{
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a{
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #FFF;
+	border-radius: 20px;
+}
+
+ul li a:hover, ul li a:active{
+	background: #fff;
+	color:#956243;
+}
