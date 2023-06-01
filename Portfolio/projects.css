@@ -8,7 +8,11 @@
   padding: 0;
   background: #956243;
 }
-
+body{
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
 header {
 	
 	position: absolute;
@@ -52,3 +56,24 @@ ul li a:hover, ul li a:active{
 	background: #fff;
 	color:#956243;
 }
+.Content{
+	margin: 100px;
+	padding: 5px;
+	background-color:rgba(255,255,255,0.1);
+	height: 300px;
+	text-align: start;
+	border-radius: 5px;
+}
+.Content .images img{
+	border-radius: 50%;
+	width: 100px;
+	height:100px;
+	margin-top: 5%;
+}
+h3{
+	color: aliceblue;
+}
+.Icerik h3{
+	font-weight: 600;
+}
+
