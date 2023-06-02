@@ -1,0 +1,46 @@
+﻿@using Portfolio_With_Database.Models.Siniflar
+@Model List<AnaSayfa>
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Sude The Dragon SLayer </title>
+    <meta name="Description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="~/web-Portfolio/projects.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="FirstHeader">Sude The Dragon Slayer</h1>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="Content">
+        <div class="Icerik">
+            @foreach (var x in Model)
+            {
+            <h3>@x.Baslik</h3>
+            <p>@x.Aciklama</p>
+            } 
+        </div>
+        <div class="projeDosyaları">
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
