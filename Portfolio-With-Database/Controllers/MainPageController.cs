@@ -17,6 +17,25 @@ namespace Portfolio_With_Database.Controllers
 
             return View(deger);
         }
-        
+        public ActionResult YeniIkon()
+        {
+            return View();
+
+        }
+        [HttpPost]
+        public ActionResult YeniIkon(AnaSayfa p)
+        {
+            c.AnaSayfas.Add(p);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+        public ActionResult YaziSil(int Id)
+        {
+            var sil = c.AnaSayfas.Find(Id);
+            c.AnaSayfas.Remove(sil);
+            c.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
