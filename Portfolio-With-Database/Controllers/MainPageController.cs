@@ -17,5 +17,6 @@ namespace Portfolio_With_Database.Controllers
 
             return View(deger);
         }
+        
     }
 }

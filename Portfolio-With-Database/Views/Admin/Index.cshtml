@@ -1,0 +1,31 @@
+﻿@using Portfolio_With_Database.Models.Siniflar
+@model List<AnaSayfa>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered mt-3">
+    <tr>
+        <th>Id</th>
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>İletişim</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+      <tr>
+          <td>@x.Id</td>
+          <td>@x.Baslik</td>
+          <td>@x.Aciklama</td>>
+          <td>@x.Iletisim</td>
+          <td><a href="/Admin/AnaSayfaGetir/@x.Id" class="btn btn-primary">Güncelle</a></td>
+          <td><a href="/Admin/YaziSil/@x.Id" class="btn btn-danger">Sil</a></td>
+      </tr>
+    }
+</table>
+<a href="/MainPage/YeniIkon" class="btn btn-primary"> Yeni Yazı Ekle</a>
+
+
